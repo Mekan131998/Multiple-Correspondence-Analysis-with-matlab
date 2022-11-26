@@ -1,2 +1,6 @@
 # Multiple-Correspondence-Analysis-with-matlab
-Data analysis project: Fun with flags 
+Group project on data analysis: Fun with flags 
+
+done by 
+M. Merdanov
+E.Gradova 
