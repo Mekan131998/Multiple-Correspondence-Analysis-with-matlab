@@ -2,5 +2,5 @@
 Group project on data analysis: Fun with flags 
 
 done by 
-M. Merdanov
+M. Merdanov, 
 E.Gradova 
