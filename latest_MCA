@@ -1,16 +1,45 @@
 %Our data matrix
-N=[ 1 0 1 0 0 1 0 1 1 0 0 1 0 1 1 0 0 1 0 0 1 0 0 0 0 1 0;
-    1 0 1 0 0 1 0 1 1 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 0 0 1;
-    1 0 1 0 1 0 1 0 0 1 0 1 0 1 1 0 0 0 1 0 0 1 0 0 0 0 1;
-    0 1 1 0 0 1 0 1 1 0 1 0 0 1 0 1 0 0 1 0 0 0 0 0 1 1 0;
-    0 1 0 1 0 1 0 1 1 0 0 1 1 0 0 0 1 1 0 0 1 0 0 0 0 1 0;
-    1 0 1 0 0 1 0 1 1 0 0 1 0 1 0 0 1 1 0 0 1 0 0 0 0 1 0;
-    1 0 0 1 0 1 1 0 0 1 0 1 0 1 1 0 0 0 0 1 0 0 1 0 0 1 0;
-    1 0 1 0 0 1 0 1 1 0 0 1 0 1 0 1 0 1 0 0 0 0 0 1 0 1 0;
-    0 1 1 0 1 0 1 0 0 1 0 1 0 1 0 0 1 0 1 0 0 0 1 0 0 1 0;
-    1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 0 1 1 0 0 0 0 0 1 0 1 0;
-    1 0 0 1 0 1 1 0 1 0 0 1 1 0 0 0 1 0 1 0 0 0 0 0 1 0 1;
-    1 0 1 0 0 1 0 1 0 1 0 1 0 1 0 0 1 1 0 0 0 1 0 0 0 1 0];
+N=[
+1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	0	0	1	1	0	0	0	0	1	0	0	1	0	0;
+0	1	1	0	0	1	1	0	0	1	0	1	1	0	0	0	0	1	0	1	0	0	0	1	0	0	1	0	0;
+1	0	1	0	0	1	0	1	1	0	0	1	0	1	0	0	0	1	1	0	0	0	0	1	0	0	1	0	0;
+1	0	1	0	0	1	0	1	1	0	0	1	0	1	0	0	0	1	0	1	0	0	0	1	0	0	1	0	0;
+1	0	1	0	0	1	0	1	0	1	1	0	0	1	0	0	0	1	0	1	0	0	0	1	0	0	0	1	0;
+1	0	1	0	0	1	0	1	0	1	1	0	0	1	1	0	0	0	0	0	1	0	0	1	0	0	1	0	0;
+1	0	0	1	1	0	0	1	1	0	0	1	0	1	0	0	0	1	1	0	0	0	0	1	0	0	1	0	0;
+0	1	0	1	0	1	1	0	0	1	1	0	0	1	1	0	0	0	0	0	1	0	0	1	0	0	1	0	0;
+0	1	1	0	1	0	0	1	1	0	0	1	0	1	0	0	0	1	0	1	0	0	0	1	0	0	1	0	0;
+0	1	1	0	0	1	0	1	0	1	0	1	1	0	0	0	1	0	0	0	1	0	0	1	0	0	0	1	0;
+0	1	1	0	0	1	1	0	1	0	0	1	0	1	0	0	0	1	1	0	0	0	0	0	0	1	0	0	1;
+1	0	0	1	0	1	0	1	1	0	0	1	0	1	0	0	0	1	1	0	0	0	0	0	0	1	0	0	1;
+0	1	1	0	0	1	0	1	0	1	0	1	0	1	0	1	0	0	0	0	1	0	0	0	0	1	0	0	1;
+1	0	1	0	1	0	0	1	1	0	1	0	1	0	0	0	0	1	0	0	1	0	0	0	0	1	0	1	0;
+1	0	1	0	0	1	0	1	1	0	0	1	1	0	0	0	1	0	0	1	0	0	0	0	0	1	0	0	1;
+0	1	1	0	0	1	1	0	1	0	0	1	0	1	0	1	0	0	1	0	0	0	0	0	0	1	0	0	1;
+1	0	0	1	0	1	0	1	1	0	1	0	0	1	0	0	0	1	0	1	0	0	0	0	0	1	0	0	1;
+1	0	1	0	0	1	1	0	1	0	1	0	0	1	0	1	0	0	0	1	0	0	0	0	0	1	0	0	1;
+1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	1	0	0	0	0	1	0	0	0	0	1	0	0	1;
+0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	1	0	0	0	1	0	0	0	0	0	1	0	0	1;
+0	1	0	1	0	1	1	0	0	1	1	0	0	1	0	0	1	0	0	0	1	0	0	0	0	1	0	1	0;
+1	0	1	0	0	1	0	1	1	0	0	1	0	1	0	1	0	0	0	0	1	0	0	0	1	0	0	1	0;
+1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	1	0	0	0	0	1	0	0	0	1	0	0	1	0;
+1	0	0	1	0	1	0	1	1	0	1	0	0	1	0	1	0	0	0	1	0	0	0	0	1	0	0	0	1;
+0	1	1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	0	0	0	1	0	0	0	1	0	1	0	0;
+1	0	1	0	0	1	0	1	0	1	0	1	1	0	0	0	0	1	0	1	0	0	0	0	1	0	0	0	1;
+1	0	1	0	0	1	0	1	1	0	1	0	0	1	0	1	0	0	0	1	0	0	0	0	1	0	0	1	0;
+1	0	1	0	0	1	0	1	1	0	0	1	0	1	0	0	1	0	0	1	0	0	0	0	1	0	0	0	1;
+0	1	1	0	0	1	0	1	1	0	0	1	1	0	0	0	1	0	1	0	0	0	0	0	1	0	0	0	1;
+1	0	0	1	1	0	0	1	1	0	0	1	0	1	0	0	1	0	0	1	0	0	0	0	1	0	0	0	1;
+1	0	1	0	0	1	0	1	0	1	1	0	0	1	0	1	0	0	0	0	1	1	0	0	0	0	1	0	0;
+1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	0	1	0	1	0	0	1	0	0	0	0	1	0	0;
+1	0	1	0	0	1	0	1	1	0	0	1	0	1	0	0	1	0	1	0	0	1	0	0	0	0	0	1	0;
+1	0	0	1	0	1	0	1	0	1	1	0	0	1	0	0	1	0	0	1	0	1	0	0	0	0	0	0	1;
+1	0	1	0	0	1	0	1	0	1	1	0	0	1	0	1	0	0	0	1	0	1	0	0	0	0	1	0	0;
+0	1	0	1	1	0	0	1	1	0	1	0	0	1	0	0	1	0	0	0	1	0	1	0	0	0	0	1	0;
+1	0	0	1	0	1	0	1	0	1	1	0	0	1	0	0	1	0	0	1	0	0	1	0	0	0	0	1	0;
+0	1	1	0	0	1	1	0	1	0	0	1	0	1	0	0	1	0	0	1	0	0	1	0	0	0	0	0	1;
+1	0	1	0	0	1	0	1	0	1	1	0	0	1	0	1	0	0	0	1	0	0	1	0	0	0	1	0	0;
+    ];
 
 %adding columns:
 n_i=sum(N,2);
@@ -18,18 +47,20 @@ n_i=sum(N,2);
 %adding rows:
 n_j=sum(N);
 
-[nr, nc]=size(N);
+[nc, nr]=size(N);
 %sum
 n=sum(sum(N));
 
 %Uncorrolated matrix
 U=(n_i*n_j)/n;
 
-%sizes 
-[numRows,numCols] = size(N);
-X=zeros(numRows,numCols);
-for i=1:numRows
-    for j=1:numCols
+%sizes
+[numCols,numRows] = size(N);
+
+%X matrix
+X=zeros(numCols,numRows);
+for i=1:numCols
+    for j=1:numRows
         X(i,j)=X(i,j)+(N(i,j)-U(i,j))/sqrt(U(i,j));
     end
 end
@@ -40,16 +71,13 @@ xbar=mean(X);
 
 Xc=X-repmat(xbar, n_x, 1);
 
+% PCA of Xc is CA of N
 
-%V vector 
+%V vector
 V=(Xc'*Xc)/(n-1);
 
-%eigenvalues 
+%eigenvalues
 [E, D]=eig(V);
-
-%[~,D] = sort(-diag(D));
-%D=diag(D);
-
 
 %diagonal matrix
 Dh=diag(n_i);
@@ -58,14 +86,14 @@ Df=diag(n_j);
 R=sqrt(n)*inv(Dh)*N*sqrt(inv(Df))*E;
 C=sqrt(n-1)*sqrt(inv(Df))*E*sqrt(D);
 
-%1st method: Scree plot 
-%extract diagonal elements 
+%1st method: Scree plot
+%extract diagonal elements
 eigval=diag(D);
-%order in decending order 
+%order in decending order
 eigval=flipud(eigval);
-eigvec=E(:, nc:-1:1);
+eigvec=E(:, nr:-1:1);
 
-%do a scree plot 
+%do a scree plot
 figure, plot(1: length(eigval), eigval, 'ko-')
 title('Scree Plot')
 xlabel('Eigenvalue Index -k')
@@ -80,36 +108,39 @@ avgeig = mean(eigval);
 ind = find(eigval > avgeig);
 length(ind);
 
-P=E(:,1:3);
-
+P=E(:,1:8);
 %P1, P2, P3, P4, P5
 
 Xp=Xc*P;
 
 [n_Xp, p_Xp]=size(Xp);
-Pl=E(:,4:5);
-Xl=Xc*Pl;
 
-A=zeros(nc,1);
-for i=1:nc
-    A(i)=i;
-end
-str=string(A);
-
-figure, plot(Xp(:,1), Xp(:,2),'k*')
-xlabel('PC1 23%'), ylabel('PC2 18%')
+figure, plot(Xp(:,1), Xp(:,2),'b*')
+xlabel('PC1 13%'), ylabel('PC2 12%')
 for i=1:n_Xp
-        text(Xp(i,1),Xp(i,2),str(i));
+        text(Xp(i,1),Xp(i,2),num2str(i));
 end
 
-figure, plot(Xp(:,2), Xp(:,3),'k*')
-xlabel('PC2 18%'), ylabel('PC3 15%')
+figure, plot(Xp(:,2), Xp(:,3),'g*')
+xlabel('PC2 10.93%'), ylabel('PC3 9.6%')
 for i=1:n_Xp
-        text(Xp(i,2),Xp(i,3),str(i));
+        text(Xp(i,2),Xp(i,3),num2str(i));
 end
 
-figure, plot(Xl(:,1), Xl(:,2), '*');
-xlabel('PC4 12%'), ylabel('PC5 10%');
+figure, plot(Xp(:,4), Xp(:,5), '*');
+xlabel('PC4 8.87%'), ylabel('PC5 7.47%');
 for i=1:n_Xp
-        text(Xl(i,1),Xl(i,2),str(i));
+        text(Xp(i,4),Xp(i,5),num2str(i));
+end
+
+figure, plot(Xp(:,6), Xp(:, 7), '*');
+xlabel('PCA6 6.68%'), ylabel('PCA7 5.8%')
+for i=1:n_Xp
+        text(Xp(i,6),Xp(i,7),num2str(i));
+end
+
+figure, plot(Xp(:,7), Xp(:, 8), '*');
+xlabel('PCA7 5.8%'), ylabel('PCA8 5.5%')
+for i=1:n_Xp
+        text(Xp(i,7),Xp(i,8),num2str(i));
 end
