@@ -82,6 +82,7 @@ V=(Xc'*Xc)/(n-1);
 %diagonal matrix
 Dh=diag(n_i);
 Df=diag(n_j);
+
 %rows in P1P2
 R=sqrt(n)*inv(Dh)*N*sqrt(inv(Df))*E;
 C=sqrt(n-1)*sqrt(inv(Df))*E*sqrt(D);
@@ -93,20 +94,8 @@ eigval=diag(D);
 eigval=flipud(eigval);
 eigvec=E(:, nr:-1:1);
 
-%do a scree plot
-figure, plot(1: length(eigval), eigval, 'ko-')
-title('Scree Plot')
-xlabel('Eigenvalue Index -k')
-ylabel('Eigenvalue')
-
-%2nd method
+%variance explained
 propvar=eigval/sum(eigval);
-
-% 3rd method:
-avgeig = mean(eigval);
-% Find the length of ind:
-ind = find(eigval > avgeig);
-length(ind);
 
 P=E(:,1:8);
 %P1, P2, P3, P4, P5
