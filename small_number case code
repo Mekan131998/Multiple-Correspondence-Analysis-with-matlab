@@ -1,10 +1,10 @@
 %Our data matrix
 N=[
-1	0	1	0	1	0	1	0	1	0	1	1	0	0	1	1	0	0	0	0	1	0	1	0	0;
-1	0	0	1	1	0	1	1	0	0	1	1	0	0	1	1	0	0	0	0	0	1	0	0	1;
-0	1	0	1	1	1	0	0	1	1	0	1	0	1	0	0	0	1	0	0	0	1	0	1	0;
-1	0	1	0	1	0	1	0	1	1	0	1	1	0	0	0	0	1	1	0	0	0	1	0	0;
-1	0	0	1	1	0	1	0	1	1	0	1	0	1	0	0	1	0	0	1	0	0	0	1	0;
+1	0	1	0	0	1	0	1	0	1	0	0	1	1	0	0	0	0	1	0	0	1	0	0;
+1	0	0	1	0	1	1	0	0	1	0	0	1	1	0	0	0	0	0	0	1	0	0	1;
+0	1	0	1	1	0	0	1	1	0	0	1	0	0	0	1	0	0	0	1	0	0	1	0;
+1	0	1	0	0	1	0	1	1	0	1	0	0	0	0	1	1	0	0	0	0	1	0	0;
+1	0	0	1	0	1	0	1	1	0	0	1	0	0	1	0	0	1	0	0	0	0	1	0;
     ];
 
 %adding columns:
@@ -83,21 +83,21 @@ Xp=Xc*P;
 
 %graph of dimension 1 vs dimension 2
 figure, plot(Xp(:,1), Xp(:,2),'b*')
-xlabel('PCA1 37.74%'), ylabel('PCA2 29.36%')
+xlabel('PCA1 39.56%'), ylabel('PCA2 27.80%')
 for i=1:n_Xp
         text(Xp(i,1),Xp(i,2),num2str(i));
 end
 
 %graph of dimension 2 vs dimention 3
 figure, plot(Xp(:,2), Xp(:,3),'g*')
-xlabel('PC2 29.36%'), ylabel('PC3 19.59%')
+xlabel('PC2 27.80%'), ylabel('PC3 18.89%')
 for i=1:n_Xp
         text(Xp(i,2),Xp(i,3),num2str(i));
 end
 
 %graph of dimension 2 vs dimention 3
 figure, plot(Xp(:,1), Xp(:,3),'g*')
-xlabel('PCA1 37.74%'), ylabel('PC3 19.59%')
+xlabel('PCA1 39.56%'), ylabel('PC3 18.89%')
 for i=1:n_Xp
         text(Xp(i,1),Xp(i,3),num2str(i));
 end
