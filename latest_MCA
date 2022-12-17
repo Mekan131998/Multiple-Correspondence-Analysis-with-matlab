@@ -20,7 +20,7 @@ N=[
 1	0	1	0	0	1	1	0	1	0	1	0	0	1	0	1	0	0	0	1	0	0	0	0	0	1	0	0	1;
 1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	1	0	0	0	0	1	0	0	0	0	1	0	0	1;
 0	1	1	0	1	0	0	1	0	1	0	1	1	0	0	1	0	0	0	1	0	0	0	0	0	1	0	0	1;
-0	1	0	1	0	1	1	0	0	1	1	0	0	1	0	0	1	0	0	0	1	0	0	0	0	1	0	1	0;
+0	1	0	1	0	1	1	0	0	1	1	0	0	1	0	0	1	0	0	0	1	0	0	0	1	0	0	1	0;
 1	0	1	0	0	1	0	1	1	0	0	1	0	1	0	1	0	0	0	0	1	0	0	0	1	0	0	1	0;
 1	0	1	0	0	1	0	1	0	1	0	1	0	1	0	1	0	0	0	0	1	0	0	0	1	0	0	1	0;
 1	0	0	1	0	1	0	1	1	0	1	0	0	1	0	1	0	0	0	1	0	0	0	0	1	0	0	0	1;
@@ -117,42 +117,41 @@ Xp=Xc*P;
 
 %graph of dimension 1 vs dimension 2
 figure, plot(Xp(:,1), Xp(:,2),'b*')
-xlabel('PC1 13%'), ylabel('PC2 12%')
+xlabel('PC1 13.70%'), ylabel('PC2 12.69%')
 for i=1:n_Xp
         text(Xp(i,1),Xp(i,2),num2str(i));
 end
 
 %graph of dimension 2 vs dimention 3
 figure, plot(Xp(:,2), Xp(:,3),'g*')
-xlabel('PC2 10.93%'), ylabel('PC3 9.6%')
+xlabel('PC2 12.69%'), ylabel('PC3 10.58%')
 for i=1:n_Xp
         text(Xp(i,2),Xp(i,3),num2str(i));
 end
 
 %graph of dimension 4 vs dimension 5
 figure, plot(Xp(:,4), Xp(:,5), '*');
-xlabel('PC4 8.87%'), ylabel('PC5 7.47%');
+xlabel('PC4 9.5%'), ylabel('PC5 8.8%');
 for i=1:n_Xp
         text(Xp(i,4),Xp(i,5),num2str(i));
 end
 %graph of dimension 5 vs dimension 6
 figure, plot(Xp(:,5), Xp(:,6), '*');
-xlabel('PC5 7.47%'), ylabel('PC6 6.68%');
+xlabel('PC5 8.8%'), ylabel('PC6 7.56%');
 for i=1:n_Xp
         text(Xp(i,5),Xp(i,6),num2str(i));
 end
 
 %graph of dimension 6 vs dimension 7
 figure, plot(Xp(:,6), Xp(:, 7), '*');
-xlabel('PCA6 6.68%'), ylabel('PCA7 5.8%')
+xlabel('PCA6 7.56%'), ylabel('PCA7 6.69%')
 for i=1:n_Xp
         text(Xp(i,6),Xp(i,7),num2str(i));
 end
 
 %graph of dimension 7 vs dimension 8
 figure, plot(Xp(:,7), Xp(:, 8), '*');
-xlabel('PCA7 5.8%'), ylabel('PCA8 5.5%')
+xlabel('PCA7 6.69%'), ylabel('PCA8 5.83%')
 for i=1:n_Xp
         text(Xp(i,7),Xp(i,8),num2str(i));
 end
-
